@@ -32,7 +32,37 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  background-color: #333333;
+  margin-inline: 100px;
+}
+
+ul>li {
+  padding: 12px;
+}
+
+ul>li>a {
+  color: white;
+  text-decoration: none;
+}
+
+ul>li>a:hover {
+  color: #61dafb;
+}
+
+ul>li>a.active {
+  color: rgb(34 197 94);
+}
+
+ul>li>a.unselected {
+  color: white;
 }
